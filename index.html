@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Gunnotor Dhara</title>
+	<link rel="icon" href="me.jpg"/>
+</head>
+<body>
+
+	<h1>Gunnotor Dhara</h1>
+	<input type="number" id="inital"placeholder="enter the strat Number" />
+	<input type="number" id="limitNumber"placeholder="enter the Limit Number" />
+	<input type="button" id="btn"  value="Result" />
+	<h1 id ="show1"></h1>
+	<h1 id ="show"></h1>
+	 
+	<script type="text/javascript">
+	
+		 document.getElementById("btn").addEventListener("click",function(){
+				var initalNumb = Number(document.getElementById("inital").value);
+				var limitNumber = Number(document.getElementById("limitNumber").value);
+				var a=1;
+					if(initalNumb<limitNumber){
+						for (i = initalNumb; i <= limitNumber; i++){
+							
+							var a=a*i;
+							document.getElementById("show").innerHTML="Summation = "+a;
+					
+						}
+					}else{
+						alert("Limit number   must be  greater than start number");
+						var initalNumb = Number(document.getElementById("inital").value="");
+						var limitNumber = Number(document.getElementById("limitNumber").value='');
+					}
+				
+					
+					
+				});
+		
+	
+	</script> 
+</body>
+</html>
